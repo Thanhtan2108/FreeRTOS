@@ -21,3 +21,5 @@ Các kiến thức được tìm hiểu trong Notion được dựa theo tham kh
 [Tìm hiểu về các API chuẩn chính thống trong FreeRTOS tại đây](https://www.freertos.org/media/2018/FreeRTOS_Reference_Manual_V10.0.0.pdf)
 
 [Kiến thức tổng hợp về FreeRTOS trên Notion và code minh họa](https://www.notion.so/B-O-C-O-FreeRTOS-1e47eafeb0ee801ca343d898de377b0c)
+
+[Xem thêm các API được tổng hợp từ ChatGPT tại đây](./cheatsheet.md)
