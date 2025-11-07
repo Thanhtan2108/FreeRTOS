@@ -8,7 +8,7 @@
 #define PULSE_SENSOR_PIN 35
 
 // Actuator Pins
-#define RELAY_PIN        23
+#define RELAY_PIN        13
 #define SERVO_PIN        18
 #define FAN_PWM_PIN      19
 #define BUZZER_PIN       2
