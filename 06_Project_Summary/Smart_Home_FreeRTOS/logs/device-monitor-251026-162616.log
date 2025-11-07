@@ -1,0 +1,21 @@
+st:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+🤖 SMART HOME EMBEDDED SYSTEM
+📅 Phase: Week 1 - Unit Testing
+🎯 Goal: Verify all hardware modules
+
+🧪 === TESTING DHT11 ===
+DHT11: Initialized successfully
+✅ DHT11: INIT SUCCESS
+✅ Reading 1: 30.80 °C, 67.00% humidity
+✅ Reading 2: 30.80 °C, 67.00% humidity
+✅ Reading 3: 30.80 °C, 67.00% humidity
+✅ Reading 4: 30.80 °C, 67.00% humidity
+✅ Reading 5: 30.80 °C, 67.00% humidity

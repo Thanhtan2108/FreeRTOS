@@ -1,0 +1,82 @@
+0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+🤖 SMART HOME EMBEDDED SYSTEM
+📅 Phase: Week 1 - Unit Testing
+🎯 Goal: Verify all hardware modules
+
+🧪 === TESTING SERVO ===
+✅ Servo: Initialized successfully on GPIO 18
+🔧 Servo: Quick test completed (position 90°)
+✅ Servo: INIT SUCCESS
+🔄 Servo: Moving to 0 degrees
+🔄 Servo: Moving to 1 degrees
+🔄 Servo: Moving to 2 degrees
+🔄 Servo: Moving to 3 degrees
+🔄 Servo: Moving to 4 degrees
+🔄 Servo: Moving to 5 degrees
+🔄 Servo: Moving to 6 degrees
+🔄 Servo: Moving to 7 degrees
+🔄 Servo: Moving to 8 degrees
+🔄 Servo: Moving to 9 degrees
+🔄 Servo: Moving to 10 degrees
+🔄 Servo: Moving to 11 degrees
+🔄 Servo: Moving to 12 degrees
+🔄 Servo: Moving to 13 degrees
+🔄 Servo: Moving to 14 degrees
+🔄 Servo: Moving to 15 degrees
+🔄 Servo: Moving to 16 degrees
+🔄 Servo: Moving to 17 degrees
+🔄 Servo: Moving to 18 degrees
+🔄 Servo: Moving to 19 degrees
+🔄 Servo: Moving to 20 degrees
+🔄 Servo: Moving to 21 degrees
+🔄 Servo: Moving to 22 degrees
+🔄 Servo: Moving to 23 degrees
+🔄 Servo: Moving to 24 degrees
+🔄 Servo: Moving to 25 degrees
+🔄 Servo: Moving to 26 degrees
+🔄 Servo: Moving to 27 degrees
+🔄 Servo: Moving to 28 degrees
+🔄 Servo: Moving to 29 degrees
+🔄 Servo: Moving to 30 degrees
+🔄 Servo: Moving to 31 degrees
+🔄 Servo: Moving to 32 degrees
+🔄 Servo: Moving to 33 degrees
+🔄 Servo: Moving to 34 degrees
+🔄 Servo: Moving to 35 degrees
+🔄 Servo: Moving to 36 degrees
+🔄 Servo: Moving to 37 degrees
+🔄 Servo: Moving to 38 degrees
+🔄 Servo: Moving to 39 degrees
+🔄 Servo: Moving to 40 degrees
+🔄 Servo: Moving to 41 degrees
+🔄 Servo: Moving to 42 degrees
+🔄 Servo: Moving to 43 degrees
+🔄 Servo: Moving to 44 degrees
+🔄 Servo: Moving to 45 degrees
+🔄 Servo: Moving to 46 degrees
+🔄 Servo: Moving to 47 degrees
+🔄 Servo: Moving to 48 degrees
+🔄 Servo: Moving to 49 degrees
+🔄 Servo: Moving to 50 degrees
+🔄 Servo: Moving to 51 degrees
+🔄 Servo: Moving to 52 degrees
+🔄 Servo: Moving to 53 degrees
+🔄 Servo: Moving to 54 degrees
+🔄 Servo: Moving to 55 degrees
+🔄 Servo: Moving to 56 degrees
+🔄 Servo: Moving to 57 degrees
+🔄 Servo: Moving to 58 degrees
+🔄 Servo: Moving to 59 degrees
+🔄 Servo: Moving to 60 degrees
+🔄 Servo: Moving to 61 degrees
+🔄 Servo: Moving to 62 degrees
+🔄 Servo: Moving to 63 degrees
+🔄 Servo: Moving to 64 degrees
+🔄 Servo: Moving to 65 degrees

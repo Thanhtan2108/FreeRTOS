@@ -1,0 +1,27 @@
+PI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+🤖 SMART HOME EMBEDDED SYSTEM
+📅 Phase: Week 1 - Unit Testing
+🎯 Goal: Verify all hardware modules
+
+🧪 === TESTING RELAY ===
+✅ Relay: Initialized successfully on GPIO 13
+💡 Relay Jumper: HIGH level trigger (ON when GPIO=HIGH)
+🔧 Quick relay test...
+👀 Did you hear 2 clicks?
+✅ Relay: INIT SUCCESS
+🔌 Test 1: Turning relay ON
+🔌 Relay: ON ⚡ (GPIO 13 = HIGH)
+📊 Actual GPIO 13 state: 1
+👂 Nghe tiếng click? 💡 Đèn LED trên relay sáng?
+🔌 Test 2: Turning relay OFF
+🔌 Relay: OFF ◾ (GPIO 13 = LOW)
+📊 Actual GPIO 13 state: 0
+👂 Nghe tiếng click? 💡 Đèn LED trên relay tắt?

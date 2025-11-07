@@ -1,0 +1,459 @@
+x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+🤖 SMART HOME EMBEDDED SYSTEM
+📅 Phase: Week 1 - Unit Testing
+🎯 Goal: Verify all hardware modules
+
+🧪 === TESTING OLED ===
+OLED: Initialized successfully
+✅ OLED: INIT SUCCESS
+📟 Kiểm tra: Màn hình có hiển thị 4 dòng chữ?
+📟 Kiểm tra: Màn hình có hiển thị status?
+📟 Kiểm tra: Màn hình có hiển thị sensor data?
+
+🧪 === TESTING DS18B20 ===
+DS18B20: Found 1 devices
+✅ DS18B20: INIT SUCCESS
+📡 Found 1 devices
+✅ Reading 1: 28.81 °C
+✅ Reading 2: 28.88 °C
+✅ Reading 3: 28.81 °C
+✅ Reading 4: 28.88 °C
+✅ Reading 5: 28.88 °C
+
+🧪 === TESTING DHT11 ===
+DHT11: Initialized successfully
+✅ DHT11: INIT SUCCESS
+✅ Reading 1: 30.60 °C, 73.00% humidity
+✅ Reading 2: 30.40 °C, 73.00% humidity
+✅ Reading 3: 30.70 °C, 73.00% humidity
+✅ Reading 4: 30.50 °C, 73.00% humidity
+✅ Reading 5: 30.80 °C, 73.00% humidity
+
+🧪 === TESTING BH1750 ===
+BH1750: Initialized successfully
+✅ BH1750: INIT SUCCESS
+✅ Reading 1: 0.00 lux
+💡 Môi trường: Rất tối
+✅ Reading 2: 1.67 lux
+💡 Môi trường: Rất tối
+✅ Reading 3: 1.67 lux
+💡 Môi trường: Rất tối
+✅ Reading 4: 10.00 lux
+💡 Môi trường: Tối
+✅ Reading 5: 388.33 lux
+💡 Môi trường: Sáng vừa
+
+🧪 === TESTING MQ135 (CALIBRATED) ===
+MQ135: Initialized
+🔧 Running quick calibration...
+📊 Raw ADC Average: 582.9
+💡 MQ135 ready for testing (values are relative)
+✅ MQ135: INIT SUCCESS
+
+📊 Giá trị tham khảo:
+   - Không khí sạch: 10-600 ppm
+   - Không khí bình thường: 610-1000 ppm
+   - Ô nhiễm: 1000+ ppm
+📊 Testing with simplified calibration:
+📈 Reading 1: RAW=583, PPM=627
+🌬️  Chất lượng: Trung bình
+📈 Reading 2: RAW=582, PPM=630
+🌬️  Chất lượng: Trung bình
+📈 Reading 3: RAW=589, PPM=630
+🌬️  Chất lượng: Trung bình
+📈 Reading 4: RAW=589, PPM=630
+🌬️  Chất lượng: Trung bình
+📈 Reading 5: RAW=588, PPM=627
+🌬️  Chất lượng: Trung bình
+
+🧪 === TESTING SERVO ===
+✅ Servo: Initialized successfully on GPIO 18
+🔧 Servo: Quick test completed (position 90°)
+✅ Servo: INIT SUCCESS
+🔄 Servo: Moving to 0 degrees
+🔄 Servo: Moving to 1 degrees
+🔄 Servo: Moving to 2 degrees
+🔄 Servo: Moving to 3 degrees
+🔄 Servo: Moving to 4 degrees
+🔄 Servo: Moving to 5 degrees
+🔄 Servo: Moving to 6 degrees
+🔄 Servo: Moving to 7 degrees
+🔄 Servo: Moving to 8 degrees
+🔄 Servo: Moving to 9 degrees
+🔄 Servo: Moving to 10 degrees
+🔄 Servo: Moving to 11 degrees
+🔄 Servo: Moving to 12 degrees
+🔄 Servo: Moving to 13 degrees
+🔄 Servo: Moving to 14 degrees
+🔄 Servo: Moving to 15 degrees
+🔄 Servo: Moving to 16 degrees
+🔄 Servo: Moving to 17 degrees
+🔄 Servo: Moving to 18 degrees
+🔄 Servo: Moving to 19 degrees
+🔄 Servo: Moving to 20 degrees
+🔄 Servo: Moving to 21 degrees
+🔄 Servo: Moving to 22 degrees
+🔄 Servo: Moving to 23 degrees
+🔄 Servo: Moving to 24 degrees
+🔄 Servo: Moving to 25 degrees
+🔄 Servo: Moving to 26 degrees
+🔄 Servo: Moving to 27 degrees
+🔄 Servo: Moving to 28 degrees
+🔄 Servo: Moving to 29 degrees
+🔄 Servo: Moving to 30 degrees
+🔄 Servo: Moving to 31 degrees
+🔄 Servo: Moving to 32 degrees
+🔄 Servo: Moving to 33 degrees
+🔄 Servo: Moving to 34 degrees
+🔄 Servo: Moving to 35 degrees
+🔄 Servo: Moving to 36 degrees
+🔄 Servo: Moving to 37 degrees
+🔄 Servo: Moving to 38 degrees
+🔄 Servo: Moving to 39 degrees
+🔄 Servo: Moving to 40 degrees
+🔄 Servo: Moving to 41 degrees
+🔄 Servo: Moving to 42 degrees
+🔄 Servo: Moving to 43 degrees
+🔄 Servo: Moving to 44 degrees
+🔄 Servo: Moving to 45 degrees
+🔄 Servo: Moving to 46 degrees
+🔄 Servo: Moving to 47 degrees
+🔄 Servo: Moving to 48 degrees
+🔄 Servo: Moving to 49 degrees
+🔄 Servo: Moving to 50 degrees
+🔄 Servo: Moving to 51 degrees
+🔄 Servo: Moving to 52 degrees
+🔄 Servo: Moving to 53 degrees
+🔄 Servo: Moving to 54 degrees
+🔄 Servo: Moving to 55 degrees
+🔄 Servo: Moving to 56 degrees
+🔄 Servo: Moving to 57 degrees
+🔄 Servo: Moving to 58 degrees
+🔄 Servo: Moving to 59 degrees
+🔄 Servo: Moving to 60 degrees
+🔄 Servo: Moving to 61 degrees
+🔄 Servo: Moving to 62 degrees
+🔄 Servo: Moving to 63 degrees
+🔄 Servo: Moving to 64 degrees
+🔄 Servo: Moving to 65 degrees
+🔄 Servo: Moving to 66 degrees
+🔄 Servo: Moving to 67 degrees
+🔄 Servo: Moving to 68 degrees
+🔄 Servo: Moving to 69 degrees
+🔄 Servo: Moving to 70 degrees
+🔄 Servo: Moving to 71 degrees
+🔄 Servo: Moving to 72 degrees
+🔄 Servo: Moving to 73 degrees
+🔄 Servo: Moving to 74 degrees
+🔄 Servo: Moving to 75 degrees
+🔄 Servo: Moving to 76 degrees
+🔄 Servo: Moving to 77 degrees
+🔄 Servo: Moving to 78 degrees
+🔄 Servo: Moving to 79 degrees
+🔄 Servo: Moving to 80 degrees
+🔄 Servo: Moving to 81 degrees
+🔄 Servo: Moving to 82 degrees
+🔄 Servo: Moving to 83 degrees
+🔄 Servo: Moving to 84 degrees
+🔄 Servo: Moving to 85 degrees
+🔄 Servo: Moving to 86 degrees
+🔄 Servo: Moving to 87 degrees
+🔄 Servo: Moving to 88 degrees
+🔄 Servo: Moving to 89 degrees
+🔄 Servo: Moving to 90 degrees
+🔄 Servo: Moving to 91 degrees
+🔄 Servo: Moving to 92 degrees
+🔄 Servo: Moving to 93 degrees
+🔄 Servo: Moving to 94 degrees
+🔄 Servo: Moving to 95 degrees
+🔄 Servo: Moving to 96 degrees
+🔄 Servo: Moving to 97 degrees
+🔄 Servo: Moving to 98 degrees
+🔄 Servo: Moving to 99 degrees
+🔄 Servo: Moving to 100 degrees
+🔄 Servo: Moving to 101 degrees
+🔄 Servo: Moving to 102 degrees
+🔄 Servo: Moving to 103 degrees
+🔄 Servo: Moving to 104 degrees
+🔄 Servo: Moving to 105 degrees
+🔄 Servo: Moving to 106 degrees
+🔄 Servo: Moving to 107 degrees
+🔄 Servo: Moving to 108 degrees
+🔄 Servo: Moving to 109 degrees
+🔄 Servo: Moving to 110 degrees
+🔄 Servo: Moving to 111 degrees
+🔄 Servo: Moving to 112 degrees
+🔄 Servo: Moving to 113 degrees
+🔄 Servo: Moving to 114 degrees
+🔄 Servo: Moving to 115 degrees
+🔄 Servo: Moving to 116 degrees
+🔄 Servo: Moving to 117 degrees
+🔄 Servo: Moving to 118 degrees
+🔄 Servo: Moving to 119 degrees
+🔄 Servo: Moving to 120 degrees
+🔄 Servo: Moving to 121 degrees
+🔄 Servo: Moving to 122 degrees
+🔄 Servo: Moving to 123 degrees
+🔄 Servo: Moving to 124 degrees
+🔄 Servo: Moving to 125 degrees
+🔄 Servo: Moving to 126 degrees
+🔄 Servo: Moving to 127 degrees
+🔄 Servo: Moving to 128 degrees
+🔄 Servo: Moving to 129 degrees
+🔄 Servo: Moving to 130 degrees
+🔄 Servo: Moving to 131 degrees
+🔄 Servo: Moving to 132 degrees
+🔄 Servo: Moving to 133 degrees
+🔄 Servo: Moving to 134 degrees
+🔄 Servo: Moving to 135 degrees
+🔄 Servo: Moving to 136 degrees
+🔄 Servo: Moving to 137 degrees
+🔄 Servo: Moving to 138 degrees
+🔄 Servo: Moving to 139 degrees
+🔄 Servo: Moving to 140 degrees
+🔄 Servo: Moving to 141 degrees
+🔄 Servo: Moving to 142 degrees
+🔄 Servo: Moving to 143 degrees
+🔄 Servo: Moving to 144 degrees
+🔄 Servo: Moving to 145 degrees
+🔄 Servo: Moving to 146 degrees
+🔄 Servo: Moving to 147 degrees
+🔄 Servo: Moving to 148 degrees
+🔄 Servo: Moving to 149 degrees
+🔄 Servo: Moving to 150 degrees
+🔄 Servo: Moving to 151 degrees
+🔄 Servo: Moving to 152 degrees
+🔄 Servo: Moving to 153 degrees
+🔄 Servo: Moving to 154 degrees
+🔄 Servo: Moving to 155 degrees
+🔄 Servo: Moving to 156 degrees
+🔄 Servo: Moving to 157 degrees
+🔄 Servo: Moving to 158 degrees
+🔄 Servo: Moving to 159 degrees
+🔄 Servo: Moving to 160 degrees
+🔄 Servo: Moving to 161 degrees
+🔄 Servo: Moving to 162 degrees
+🔄 Servo: Moving to 163 degrees
+🔄 Servo: Moving to 164 degrees
+🔄 Servo: Moving to 165 degrees
+🔄 Servo: Moving to 166 degrees
+🔄 Servo: Moving to 167 degrees
+🔄 Servo: Moving to 168 degrees
+🔄 Servo: Moving to 169 degrees
+🔄 Servo: Moving to 170 degrees
+🔄 Servo: Moving to 171 degrees
+🔄 Servo: Moving to 172 degrees
+🔄 Servo: Moving to 173 degrees
+🔄 Servo: Moving to 174 degrees
+🔄 Servo: Moving to 175 degrees
+🔄 Servo: Moving to 176 degrees
+🔄 Servo: Moving to 177 degrees
+🔄 Servo: Moving to 178 degrees
+🔄 Servo: Moving to 179 degrees
+🔄 Servo: Moving to 180 degrees
+🔄 Servo: Moving to 180 degrees
+🔄 Servo: Moving to 179 degrees
+🔄 Servo: Moving to 178 degrees
+🔄 Servo: Moving to 177 degrees
+🔄 Servo: Moving to 176 degrees
+🔄 Servo: Moving to 175 degrees
+🔄 Servo: Moving to 174 degrees
+🔄 Servo: Moving to 173 degrees
+🔄 Servo: Moving to 172 degrees
+🔄 Servo: Moving to 171 degrees
+🔄 Servo: Moving to 170 degrees
+🔄 Servo: Moving to 169 degrees
+🔄 Servo: Moving to 168 degrees
+🔄 Servo: Moving to 167 degrees
+🔄 Servo: Moving to 166 degrees
+🔄 Servo: Moving to 165 degrees
+🔄 Servo: Moving to 164 degrees
+🔄 Servo: Moving to 163 degrees
+🔄 Servo: Moving to 162 degrees
+🔄 Servo: Moving to 161 degrees
+🔄 Servo: Moving to 160 degrees
+🔄 Servo: Moving to 159 degrees
+🔄 Servo: Moving to 158 degrees
+🔄 Servo: Moving to 157 degrees
+🔄 Servo: Moving to 156 degrees
+🔄 Servo: Moving to 155 degrees
+🔄 Servo: Moving to 154 degrees
+🔄 Servo: Moving to 153 degrees
+🔄 Servo: Moving to 152 degrees
+🔄 Servo: Moving to 151 degrees
+🔄 Servo: Moving to 150 degrees
+🔄 Servo: Moving to 149 degrees
+🔄 Servo: Moving to 148 degrees
+🔄 Servo: Moving to 147 degrees
+🔄 Servo: Moving to 146 degrees
+🔄 Servo: Moving to 145 degrees
+🔄 Servo: Moving to 144 degrees
+🔄 Servo: Moving to 143 degrees
+🔄 Servo: Moving to 142 degrees
+🔄 Servo: Moving to 141 degrees
+🔄 Servo: Moving to 140 degrees
+🔄 Servo: Moving to 139 degrees
+🔄 Servo: Moving to 138 degrees
+🔄 Servo: Moving to 137 degrees
+🔄 Servo: Moving to 136 degrees
+🔄 Servo: Moving to 135 degrees
+🔄 Servo: Moving to 134 degrees
+🔄 Servo: Moving to 133 degrees
+🔄 Servo: Moving to 132 degrees
+🔄 Servo: Moving to 131 degrees
+🔄 Servo: Moving to 130 degrees
+🔄 Servo: Moving to 129 degrees
+🔄 Servo: Moving to 128 degrees
+🔄 Servo: Moving to 127 degrees
+🔄 Servo: Moving to 126 degrees
+🔄 Servo: Moving to 125 degrees
+🔄 Servo: Moving to 124 degrees
+🔄 Servo: Moving to 123 degrees
+🔄 Servo: Moving to 122 degrees
+🔄 Servo: Moving to 121 degrees
+🔄 Servo: Moving to 120 degrees
+🔄 Servo: Moving to 119 degrees
+🔄 Servo: Moving to 118 degrees
+🔄 Servo: Moving to 117 degrees
+🔄 Servo: Moving to 116 degrees
+🔄 Servo: Moving to 115 degrees
+🔄 Servo: Moving to 114 degrees
+🔄 Servo: Moving to 113 degrees
+🔄 Servo: Moving to 112 degrees
+🔄 Servo: Moving to 111 degrees
+🔄 Servo: Moving to 110 degrees
+🔄 Servo: Moving to 109 degrees
+🔄 Servo: Moving to 108 degrees
+🔄 Servo: Moving to 107 degrees
+🔄 Servo: Moving to 106 degrees
+🔄 Servo: Moving to 105 degrees
+🔄 Servo: Moving to 104 degrees
+🔄 Servo: Moving to 103 degrees
+🔄 Servo: Moving to 102 degrees
+🔄 Servo: Moving to 101 degrees
+🔄 Servo: Moving to 100 degrees
+🔄 Servo: Moving to 99 degrees
+🔄 Servo: Moving to 98 degrees
+🔄 Servo: Moving to 97 degrees
+🔄 Servo: Moving to 96 degrees
+🔄 Servo: Moving to 95 degrees
+🔄 Servo: Moving to 94 degrees
+🔄 Servo: Moving to 93 degrees
+🔄 Servo: Moving to 92 degrees
+🔄 Servo: Moving to 91 degrees
+🔄 Servo: Moving to 90 degrees
+🔄 Servo: Moving to 89 degrees
+🔄 Servo: Moving to 88 degrees
+🔄 Servo: Moving to 87 degrees
+🔄 Servo: Moving to 86 degrees
+🔄 Servo: Moving to 85 degrees
+🔄 Servo: Moving to 84 degrees
+🔄 Servo: Moving to 83 degrees
+🔄 Servo: Moving to 82 degrees
+🔄 Servo: Moving to 81 degrees
+🔄 Servo: Moving to 80 degrees
+🔄 Servo: Moving to 79 degrees
+🔄 Servo: Moving to 78 degrees
+🔄 Servo: Moving to 77 degrees
+🔄 Servo: Moving to 76 degrees
+🔄 Servo: Moving to 75 degrees
+🔄 Servo: Moving to 74 degrees
+🔄 Servo: Moving to 73 degrees
+🔄 Servo: Moving to 72 degrees
+🔄 Servo: Moving to 71 degrees
+🔄 Servo: Moving to 70 degrees
+🔄 Servo: Moving to 69 degrees
+🔄 Servo: Moving to 68 degrees
+🔄 Servo: Moving to 67 degrees
+🔄 Servo: Moving to 66 degrees
+🔄 Servo: Moving to 65 degrees
+🔄 Servo: Moving to 64 degrees
+🔄 Servo: Moving to 63 degrees
+🔄 Servo: Moving to 62 degrees
+🔄 Servo: Moving to 61 degrees
+🔄 Servo: Moving to 60 degrees
+🔄 Servo: Moving to 59 degrees
+🔄 Servo: Moving to 58 degrees
+🔄 Servo: Moving to 57 degrees
+🔄 Servo: Moving to 56 degrees
+🔄 Servo: Moving to 55 degrees
+🔄 Servo: Moving to 54 degrees
+🔄 Servo: Moving to 53 degrees
+🔄 Servo: Moving to 52 degrees
+🔄 Servo: Moving to 51 degrees
+🔄 Servo: Moving to 50 degrees
+🔄 Servo: Moving to 49 degrees
+🔄 Servo: Moving to 48 degrees
+🔄 Servo: Moving to 47 degrees
+🔄 Servo: Moving to 46 degrees
+🔄 Servo: Moving to 45 degrees
+🔄 Servo: Moving to 44 degrees
+🔄 Servo: Moving to 43 degrees
+🔄 Servo: Moving to 42 degrees
+🔄 Servo: Moving to 41 degrees
+🔄 Servo: Moving to 40 degrees
+🔄 Servo: Moving to 39 degrees
+🔄 Servo: Moving to 38 degrees
+🔄 Servo: Moving to 37 degrees
+🔄 Servo: Moving to 36 degrees
+🔄 Servo: Moving to 35 degrees
+🔄 Servo: Moving to 34 degrees
+🔄 Servo: Moving to 33 degrees
+🔄 Servo: Moving to 32 degrees
+🔄 Servo: Moving to 31 degrees
+🔄 Servo: Moving to 30 degrees
+🔄 Servo: Moving to 29 degrees
+🔄 Servo: Moving to 28 degrees
+🔄 Servo: Moving to 27 degrees
+🔄 Servo: Moving to 26 degrees
+🔄 Servo: Moving to 25 degrees
+🔄 Servo: Moving to 24 degrees
+🔄 Servo: Moving to 23 degrees
+🔄 Servo: Moving to 22 degrees
+🔄 Servo: Moving to 21 degrees
+🔄 Servo: Moving to 20 degrees
+🔄 Servo: Moving to 19 degrees
+🔄 Servo: Moving to 18 degrees
+🔄 Servo: Moving to 17 degrees
+🔄 Servo: Moving to 16 degrees
+🔄 Servo: Moving to 15 degrees
+🔄 Servo: Moving to 14 degrees
+🔄 Servo: Moving to 13 degrees
+🔄 Servo: Moving to 12 degrees
+🔄 Servo: Moving to 11 degrees
+🔄 Servo: Moving to 10 degrees
+🔄 Servo: Moving to 9 degrees
+🔄 Servo: Moving to 8 degrees
+🔄 Servo: Moving to 7 degrees
+🔄 Servo: Moving to 6 degrees
+🔄 Servo: Moving to 5 degrees
+🔄 Servo: Moving to 4 degrees
+🔄 Servo: Moving to 3 degrees
+🔄 Servo: Moving to 2 degrees
+🔄 Servo: Moving to 1 degrees
+🔄 Servo: Moving to 0 degrees
+✅ Servo test completed
+💡 Nếu servo không quay: KIỂM TRA NGUỒN 5V!
+
+🧪 === TESTING RELAY ===
+✅ Relay: Initialized successfully on GPIO 13
+💡 Relay Jumper: HIGH level trigger (ON when GPIO=HIGH)
+🔧 Quick relay test...
+👀 Did you hear 2 clicks?
+✅ Relay: INIT SUCCESS
+🔌 Test 1: Turning relay ON
+🔌 Relay: ON ⚡ (GPIO 13 = HIGH)
+📊 Actual GPIO 13 state: 1
+👂 Nghe tiếng click? 💡 Đèn LED trên relay sáng?
+🔌 Test 2: Turning relay OFF
+🔌 Relay: OFF ◾ (GPIO 13 = LOW)
+📊 Actual GPIO 13 state: 0
+👂 Nghe tiếng click? 💡 Đèn LED trên relay tắt?

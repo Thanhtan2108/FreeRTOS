@@ -1,0 +1,18 @@
+PIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+🤖 SMART HOME EMBEDDED SYSTEM
+📅 Phase: Week 1 - Unit Testing
+🎯 Goal: Verify all hardware modules
+
+🧪 === TESTING OLED ===
+OLED: Initialized successfully
+✅ OLED: INIT SUCCESS
+📟 Kiểm tra: Màn hình có hiển thị 4 dòng chữ?
+📟 Kiểm tra: Màn hình có hiển thị status?
+📟 Kiểm tra: Màn hình có hiển thị sensor data?

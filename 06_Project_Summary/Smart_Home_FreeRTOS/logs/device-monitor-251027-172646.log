@@ -1,0 +1,34 @@
+0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+🤖 SMART HOME EMBEDDED SYSTEM
+📅 Phase: Week 1 - Unit Testing
+🎯 Goal: Verify all hardware modules
+
+🧪 === TESTING MQ135 (CALIBRATED) ===
+MQ135: Initialized
+🔧 Running quick calibration...
+📊 Raw ADC Average: 1395.4
+💡 MQ135 ready for testing (values are relative)
+✅ MQ135: INIT SUCCESS
+
+📊 Giá trị tham khảo:
+   - Không khí sạch: 10-600 ppm
+   - Không khí bình thường: 610-1000 ppm
+   - Ô nhiễm: 1000+ ppm
+📊 Testing with simplified calibration:
+📈 Reading 1: RAW=1392, PPM=957
+🌬️  Chất lượng: Trung bình
+📈 Reading 2: RAW=1439, PPM=948
+🌬️  Chất lượng: Trung bình
+📈 Reading 3: RAW=1407, PPM=944
+🌬️  Chất lượng: Trung bình
+📈 Reading 4: RAW=1382, PPM=955
+🌬️  Chất lượng: Trung bình
+📈 Reading 5: RAW=1413, PPM=960
+🌬️  Chất lượng: Trung bình

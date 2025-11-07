@@ -1,0 +1,29 @@
+t:0x1 (POWERON_RESET),boot:0x17 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+🤖 SMART HOME EMBEDDED SYSTEM
+📅 Phase: Week 1 - Unit Testing
+🎯 Goal: Verify all hardware modules
+
+🧪 === TESTING RELAY ===
+Relay: Initialized successfully (starting OFF)
+✅ Relay: INIT SUCCESS
+🔌 Test 1: Turning relay ON
+Relay: Set to ON
+👂 Nghe tiếng click? 💡 Đèn LED trên relay sáng?
+🔌 Test 2: Turning relay OFF
+Relay: Set to OFF
+👂 Nghe tiếng click? 💡 Đèn LED trên relay tắt?
+🔌 Test 3: Toggling relay (should turn ON)
+Relay: Set to ON
+💡 Kiểm tra: Relay đã BẬT?
+🔌 Test 4: Toggling relay (should turn OFF)
+Relay: Set to OFF
+💡 Kiểm tra: Relay đã TẮT?
+✅ Relay test completed

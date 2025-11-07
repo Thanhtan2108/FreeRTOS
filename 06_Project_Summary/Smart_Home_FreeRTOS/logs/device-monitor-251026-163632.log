@@ -1,0 +1,35 @@
+PI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+🤖 SMART HOME EMBEDDED SYSTEM
+📅 Phase: Week 1 - Unit Testing
+🎯 Goal: Verify all hardware modules
+
+🧪 === TESTING MQ135 ===
+MQ135: Initialized (warming up... need 24-48 hours for accurate readings)
+✅ MQ135: INIT SUCCESS
+⚠️  LƯU Ý QUAN TRỌNG:
+   - MQ135 cần 24-48 giờ warm-up để ổn định
+   - Giá trị ban đầu có thể không chính xác
+   - Test trong môi trường thông thoáng
+
+📊 Giá trị tham khảo:
+   - Không khí sạch: 10-100 ppm
+   - Không khí bình thường: 100-300 ppm
+   - Ô nhiễm: 300+ ppm
+📊 Reading 1: 30680 ppm
+🌬️  Chất lượng: Kém
+📊 Reading 2: 30268 ppm
+🌬️  Chất lượng: Kém
+📊 Reading 3: 31351 ppm
+🌬️  Chất lượng: Kém
+📊 Reading 4: 31267 ppm
+🌬️  Chất lượng: Kém
+📊 Reading 5: 31098 ppm
+🌬️  Chất lượng: Kém

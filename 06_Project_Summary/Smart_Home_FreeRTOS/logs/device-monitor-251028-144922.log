@@ -1,0 +1,21 @@
+ SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:1184
+load:0x40078000,len:13232
+load:0x40080400,len:3028
+entry 0x400805e4
+
+🤖 SMART HOME EMBEDDED SYSTEM
+📅 Phase: Week 1 - Unit Testing
+🎯 Goal: Verify all hardware modules
+
+🧪 === TESTING SERVO ===
+❌ Servo: Failed to attach to pin
+🔍 Check: 5V power, GND sharing, and GPIO 25 connection
+❌ Servo: INIT FAILED
+🔍 KIỂM TRA KHẨN CẤP:
+   - SERVO CẦN NGUỒN 5V RIÊNG
+   - KHÔNG dùng 5V từ ESP32 (dùng nguồn ngoài)
+   - Chia sẻ GND giữa ESP32 và nguồn servo
+   - Dây tín hiệu nối GPIO 18
